@@ -1,0 +1,23 @@
+{
+  "name": "html-template-engine",
+  "version": "0.0.1",
+  "description": "Super easy HTML template engine, that allow you to focus on design",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "Template Engine",
+    "Super",
+    "Easy"
+  ],
+  "author": {
+    "name": "KULDIP PIPALIYA",
+     "email": "kuldipem@gmail.com"
+  },
+  "license": "MIT"
+}

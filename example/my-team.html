@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Kuldip Pipaliya"
+    />
+    <title> Demo My Team Page with Super Easy Html Template Engine</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/css/bootstrap.min.css"
+      integrity="sha512-aqT9YD5gLuLBr6ipQAS+72o5yHKzgZbGxEh6iY8lW/r6gG14e2kBTAJb8XrxzZrMOgSmDqtLaF76T0Z6YY2IHg=="
+      crossorigin="anonymous"
+    />
+
+    <meta name="theme-color" content="#7952b3" />
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- Template Engine Dependency --->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./../template-enginer.js"></script>
+
+  </head>
+  <body>
+    <section data-include="./includes/header.html"></section>
+    <main>
+      <div class="container marketing">
+        <div class="row">
+          <section data-include="./includes/card.html" data-iterate="18"></section>
+        </div>
+        <hr class="featurette-divider" />
+      </div>
+      <section data-include="./includes/footer.html"></section>
+    </main>
+    <script>
+      // Template Engine Initialization
+      HtmlTemplateEngine(function(){
+        // if you need to run anything after each block included
+      });
+    </script>
+  </body>
+</html>
